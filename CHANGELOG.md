@@ -2,14 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [1.0.0-beta.59](https://github.com/athensresearch/athens/compare/v1.0.0-beta.58...v1.0.0-beta.59) (2021-03-11)
+## [1.0.0-beta.59](https://github.com/athensresearch/athens/compare/v1.0.0-beta.58...v1.0.0-beta.59)
 
 
 ### Bug Fixes
 
 * **undo/redo:** textarea undo/redo; italics, highlight, underline, strikethrough [#717](https://github.com/athensresearch/athens/issues/717) ([#803](https://github.com/athensresearch/athens/issues/803)) ([2509b9a](https://github.com/athensresearch/athens/commit/2509b9a3cb63bea66f6b44cedf398d7b93dfe825))
 
-## [1.0.0-beta.58](https://github.com/athensresearch/athens/compare/v1.0.0-beta.57...v1.0.0-beta.58) (2021-03-11)
+## [1.0.0-beta.58](https://github.com/athensresearch/athens/compare/v1.0.0-beta.57...v1.0.0-beta.58)
 
 
 ### Bug Fixes
@@ -17,7 +17,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **title:** shift-click on title should open in right sidebar ([#802](https://github.com/athensresearch/athens/issues/802)) ([a51e001](https://github.com/athensresearch/athens/commit/a51e001cd4543b389460b1def17446230f51062c)), closes [#775](https://github.com/athensresearch/athens/issues/775)
 * Persistent Pop-up when scrolling ([#801](https://github.com/athensresearch/athens/issues/801)) ([ce4fe61](https://github.com/athensresearch/athens/commit/ce4fe61e1e73733e22367f1160456ce0829a9e8f))
 
-## [1.0.0-beta.57](https://github.com/athensresearch/athens/compare/v1.0.0-beta.56...v1.0.0-beta.57) (2021-03-11)
+## [1.0.0-beta.57](https://github.com/athensresearch/athens/compare/v1.0.0-beta.56...v1.0.0-beta.57)
 
 
 ### Bug Fixes
@@ -28,7 +28,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * S3 -> GitHub release ([#799](https://github.com/athensresearch/athens/issues/799)) ([19ceb80](https://github.com/athensresearch/athens/commit/19ceb80cc713112573098cbaf10ae7dddcea5391))
 
-## [1.0.0-beta.56](https://github.com/athensresearch/athens/compare/v1.0.0-beta.55...v1.0.0-beta.56) (2021-03-10)
+## [1.0.0-beta.56](https://github.com/athensresearch/athens/compare/v1.0.0-beta.55...v1.0.0-beta.56)
 
 
 ### Bug Fixes
@@ -40,14 +40,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 * update version number ([60390da](https://github.com/athensresearch/athens/commit/60390daea2ddba084c00ad78d65e6080c062d7ef))
 
-## [1.0.0-beta.55](https://github.com/athensresearch/athens/compare/v1.0.0-beta.54...v1.0.0-beta.55) (2021-03-10)
+## [1.0.0-beta.55](https://github.com/athensresearch/athens/compare/v1.0.0-beta.54...v1.0.0-beta.55)
 
 
 ### Documentation
 
 * add directions on how to download a specific version of Athens ([6d6e7ac](https://github.com/athensresearch/athens/commit/6d6e7ac245837fef48c5578fdf382f1fd462cad6))
 
-## [1.0.0-beta.54](https://github.com/athensresearch/athens/compare/v1.0.0-beta.53...v1.0.0-beta.54) (2021-03-10)
+## [1.0.0-beta.54](https://github.com/athensresearch/athens/compare/v1.0.0-beta.53...v1.0.0-beta.54)
 
 
 ### Enhancements
@@ -59,7 +59,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **icons:** optimize size of material-ui/icons ([#790](https://github.com/athensresearch/athens/issues/790)) ([e60d92f](https://github.com/athensresearch/athens/commit/e60d92fb9d1235d205f868d91fbce6935617d254))
 
-## [1.0.0-beta.53](https://github.com/athensresearch/athens/compare/v1.0.0-beta.52...v1.0.0-beta.53) (2021-03-09)
+## [1.0.0-beta.53](https://github.com/athensresearch/athens/compare/v1.0.0-beta.52...v1.0.0-beta.53)
 
 
 ### Bug Fixes
@@ -73,7 +73,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * use gifs ([07dc655](https://github.com/athensresearch/athens/commit/07dc65528059d943531ab14d15e0ce5b53ed5819))
 
-## [1.0.0-beta.52](https://github.com/athensresearch/athens/compare/v1.0.0-beta.51...v1.0.0-beta.52) (2021-03-09)
+## [1.0.0-beta.52](https://github.com/athensresearch/athens/compare/v1.0.0-beta.51...v1.0.0-beta.52)
 
 
 ### Bug Fixes
@@ -89,7 +89,7 @@ All notable changes to this project will be documented in this file. See [standa
 * update screenshot url ([b76f45f](https://github.com/athensresearch/athens/commit/b76f45fe76fe89ba6a37764d369b23289cbaa582))
 * **README:** update screenshots, add PH badge ([#774](https://github.com/athensresearch/athens/issues/774)) ([713b4a3](https://github.com/athensresearch/athens/commit/713b4a337b5716306a525d89e353311fa8cbcb7b))
 
-## [1.0.0-beta.51](https://github.com/athensresearch/athens/compare/v1.0.0-beta.50...v1.0.0-beta.51) (2021-03-07)
+## [1.0.0-beta.51](https://github.com/athensresearch/athens/compare/v1.0.0-beta.50...v1.0.0-beta.51)
 
 
 ### Features
@@ -97,7 +97,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **graph:** local-graphs and view customization ([#767](https://github.com/athensresearch/athens/issues/767)) ([e015a04](https://github.com/athensresearch/athens/commit/e015a049f8a77f9e7f5d09638307d18fb27356ac))
 * **toolbar:** add a "Load Test DB" button for web demo ([#764](https://github.com/athensresearch/athens/issues/764)) ([685117c](https://github.com/athensresearch/athens/commit/685117c0598e9ab8f58baf7ebfa938b67a003401))
 
-## [1.0.0-beta.50](https://github.com/athensresearch/athens/compare/v1.0.0-beta.49...v1.0.0-beta.50) (2021-03-05)
+## [1.0.0-beta.50](https://github.com/athensresearch/athens/compare/v1.0.0-beta.49...v1.0.0-beta.50)
 
 ### Chore
 
@@ -108,14 +108,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **linked-refs/block-embed:** drag & drop multiple blocks ([#743](https://github.com/athensresearch/athens/issues/743)) ([6f7407d](https://github.com/athensresearch/athens/commit/6f7407d723a4d7638d65475a9ae2398326059166))
 
-## [1.0.0-beta.49](https://github.com/athensresearch/athens/compare/v1.0.0-beta.48...v1.0.0-beta.49) (2021-03-04)
+## [1.0.0-beta.49](https://github.com/athensresearch/athens/compare/v1.0.0-beta.48...v1.0.0-beta.49)
 
 
 ### Bug Fixes
 
 * **electron:** Avoid race-condition with filesystem mtime ([#734](https://github.com/athensresearch/athens/issues/734)) ([fdc5bbf](https://github.com/athensresearch/athens/commit/fdc5bbf5a6c5556fc0a6d1933c00e9b1286a97d0))
 
-## [1.0.0-beta.48](https://github.com/athensresearch/athens/compare/v1.0.0-beta.47...v1.0.0-beta.48) (2021-03-04)
+## [1.0.0-beta.48](https://github.com/athensresearch/athens/compare/v1.0.0-beta.47...v1.0.0-beta.48)
 
 
 ### Bug Fixes
@@ -129,7 +129,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **graph:** clicking on node navigates to page ([#731](https://github.com/athensresearch/athens/issues/731)) ([94fbd64](https://github.com/athensresearch/athens/commit/94fbd64192b36726f68e5b366fd5c487af7d9c5e))
 * **parser:** Add LaTeX support ([#726](https://github.com/athensresearch/athens/issues/726)) ([3a3fb1f](https://github.com/athensresearch/athens/commit/3a3fb1f28cad0038e3e11a4d7c5418233cb519d2))
 
-## [1.0.0-beta.47](https://github.com/athensresearch/athens/compare/v1.0.0-beta.46...v1.0.0-beta.47) (2021-03-02)
+## [1.0.0-beta.47](https://github.com/athensresearch/athens/compare/v1.0.0-beta.46...v1.0.0-beta.47)
 
 
 ### Features
@@ -141,14 +141,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **title:** Empty title and regex in block query ([#720](https://github.com/athensresearch/athens/issues/720)) ([785ee38](https://github.com/athensresearch/athens/commit/785ee3834b66315d56c865e5c10879a620f337b6))
 
-## [1.0.0-beta.46](https://github.com/athensresearch/athens/compare/v1.0.0-beta.45...v1.0.0-beta.46) (2021-02-26)
+## [1.0.0-beta.46](https://github.com/athensresearch/athens/compare/v1.0.0-beta.45...v1.0.0-beta.46)
 
 
 ### Performance
 
 * use shadow-cljs release, improve job dependencies ([#704](https://github.com/athensresearch/athens/issues/704)) ([f6793d6](https://github.com/athensresearch/athens/commit/f6793d67df79f8d77b695b9f9a9c0e75a9e537db))
 
-## [1.0.0-beta.45](https://github.com/athensresearch/athens/compare/v1.0.0-beta.44...v1.0.0-beta.45) (2021-02-26)
+## [1.0.0-beta.45](https://github.com/athensresearch/athens/compare/v1.0.0-beta.44...v1.0.0-beta.45)
 
 
 ### Bug Fixes
@@ -160,7 +160,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * added calva jack-in command for windows ([#701](https://github.com/athensresearch/athens/issues/701)) ([49dbddf](https://github.com/athensresearch/athens/commit/49dbddfe19bd0124fea12e472cd08238b7fc57b0))
 
-## [1.0.0-beta.40](https://github.com/athensresearch/athens/compare/v1.0.0-beta.39...v1.0.0-beta.40) (2021-02-16)
+## [1.0.0-beta.40](https://github.com/athensresearch/athens/compare/v1.0.0-beta.39...v1.0.0-beta.40)
 
 
 ### Features
@@ -173,7 +173,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **analytics:** opt-out includes Sentry, don't capture info logs, global alert ([#652](https://github.com/athensresearch/athens/issues/652)) ([4964c76](https://github.com/athensresearch/athens/commit/4964c765bb4ef3f269ec94cd09e63ab3d515cca1))
 * **analytics:** track opt-in/opt-out ([#654](https://github.com/athensresearch/athens/issues/654)) ([24cdc04](https://github.com/athensresearch/athens/commit/24cdc04f798770827102beef1703e7fb18895dc2))
 
-## [1.0.0-beta.39](https://github.com/athensresearch/athens/compare/v1.0.0-beta.38...v1.0.0-beta.39) (2021-02-14)
+## [1.0.0-beta.39](https://github.com/athensresearch/athens/compare/v1.0.0-beta.38...v1.0.0-beta.39)
 
 
 ### Bug Fixes
