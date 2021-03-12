@@ -247,7 +247,7 @@
                                                                    :open true,
                                                                    :order 0}
                                                            #:block{:uid "bf257cc8e",
-                                                                   :string "You can see the version at the bottom of the left sidebar when it is opened. Click on the version to go to our [release notes on Notion](https://www.notion.so/athensresearch/Weekly-Updates-e18afa006cfd4fec9c462940ac3b84da).",
+                                                                   :string "You can see the version at the bottom of the left sidebar when it is opened. Click on the version to go to our [changelog on GitHub](https://github.com/athensresearch/athens/blob/master/CHANGELOG.md).",
                                                                    :open true,
                                                                    :order 1}]}
                                         #:block{:uid "2464d4538",
