@@ -171,7 +171,6 @@
       [:footer (use-sub-style left-sidebar-style :footer)
        [:a (use-style notional-logotype-style {:href "https://github.com/athensresearch/athens" :target "_blank"}) "Athens"]
        [:h5 (use-style {:align-self "center"})
-        [:a (use-style version-style {:href "https://github.com/athensresearch/athens/blob/master/CHANGELOG.md"
+        [:a (use-style version-style {:href (apply str "https://github.com/athensresearch/athens/blob/master/CHANGELOG.md#" (str/replace (athens.util/athens-version) "." ""))
                                       :target "_blank"})
          (athens.util/athens-version)]]]]]))
-
