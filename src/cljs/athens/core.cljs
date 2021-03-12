@@ -42,7 +42,8 @@
 (defn sentry-on?
   "Checks localStorage to see if sentry is on. Sentry is disabled/enabled in settings along with Posthog."
   []
-  (not= "off" (js/localStorage.getItem "sentry")))
+  ;; (not= "off" (js/localStorage.getItem "sentry")))
+  (false))
 
 
 (defn init-sentry
