@@ -7,6 +7,7 @@
     ;;[athens.views.buttons :refer [button]]
     [cljsjs.react]
     [cljsjs.react.dom]
+    [clojure.string :as str]
     [posh.reagent :refer [q]]
     [re-frame.core :refer [dispatch subscribe]]
     [reagent.core :as r]
@@ -171,6 +172,6 @@
       [:footer (use-sub-style left-sidebar-style :footer)
        [:a (use-style notional-logotype-style {:href "https://github.com/athensresearch/athens" :target "_blank"}) "Athens"]
        [:h5 (use-style {:align-self "center"})
-        [:a (use-style version-style {:href (apply str "https://github.com/athensresearch/athens/blob/master/CHANGELOG.md#" (str/replace (athens.util/athens-version) "." ""))
+        [:a (use-style version-style {:href (apply str "https://github.com/phrohdoh/athens/blob/change-athens-version-click-from-notion-to-github/CHANGELOG.md#" (str/replace (athens.util/athens-version) "." ""))
                                       :target "_blank"})
          (athens.util/athens-version)]]]]]))

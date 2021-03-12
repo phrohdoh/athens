@@ -294,8 +294,9 @@
 
 (defn athens-version
   []
-  (cond
-    (electron?) (.. (js/require "electron") -remote -app getVersion)))
+  "1.0.0-beta.59") ;; hardcode to known version
+  ;; (cond
+  ;;   (electron?) (.. (js/require "electron") -remote -app getVersion)))
     ;;(not (string/blank? COMMIT_URL)) COMMIT_URL
     ;;:else "Web"))
 
