@@ -215,9 +215,9 @@
               ;; of the whole athena component
               result-el (.. input-el (closest "div.athena") -lastElementChild)
               ;; Get next element in the result list
-              (when (not (nil? result-el)) next-el (nth (array-seq (.. result-el -children)) cur-index))]
+              next-el (nth (array-seq (.. result-el -children)) cur-index)]
           ;; Check if next el is beyond the bounds of the result list and scroll if so
-          (when (not (nil? next-el))
+          (when (and (not (nil? result-el)) (not (nil? next-el)))
             (scroll-into-view next-el result-el (not= cur-index (dec (count results)))))))
 
       (= key KeyCodes.DOWN)
@@ -227,9 +227,9 @@
         (let [cur-index (:index @state)
               input-el (.. e -target)
               result-el (.. input-el (closest "div.athena") -lastElementChild)
-              (when (not (nil? result-el)) next-el (nth (array-seq (.. result-el -children)) cur-index))]
-          (when (not (nil? next-el))
-            (scroll-into-view next-el result-el (zero? cur-index)))))
+              next-el (nth (array-seq (.. result-el -children)) cur-index)]
+          (when (and (not (nil? result-el)) (not (nil? next-el)))
+            (scroll-into-view next-el result-el (not= cur-index (dec (count results)))))))
 
       :else nil)))
 
