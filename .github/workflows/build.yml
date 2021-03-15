@@ -37,6 +37,7 @@ jobs:
          run: script/test/jvm
 
    lint:
+     if: false
      runs-on: ubuntu-18.04
      steps:
        - name: Git checkout
@@ -53,6 +54,7 @@ jobs:
          run: script/lint
 
    style:
+     if: false
      runs-on: ubuntu-18.04
      steps:
        - name: Git checkout
@@ -94,7 +96,7 @@ jobs:
 
 
    deploy-gh-pages:
-     needs: [test, lint, style, carve]
+     needs: [test, carve]
      # if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
      runs-on: ubuntu-latest
      steps:
