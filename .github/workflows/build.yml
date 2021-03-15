@@ -136,7 +136,7 @@ jobs:
          run: yarn install --frozen-lockfile
 
        - name: Compile app
-         run: COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" lein run -m shadow.cljs.devtools.cli --npm release app --config-merge "{:closure-defines {athens.core/SENTRY_DSN \"${SENTRY_DSN}\" athens.util/COMMIT_URL \"${COMMIT_URL}\" }}"
+         run: COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" COMMIT_SHA="${GITHUB_SHA}" lein run -m shadow.cljs.devtools.cli --npm release app --config-merge "{:closure-defines {athens.core/SENTRY_DSN \"${SENTRY_DSN}\" athens.util/COMMIT_URL \"${COMMIT_URL}\" athens.util/COMMIT_SHA \"${COMMIT_SHA}\"}}"
          env:
            SENTRY_DSN: ${{ secrets.sentry_dsn }}
 

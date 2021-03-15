@@ -292,13 +292,7 @@
 ;;(goog-define COMMIT_URL "")
 
 
-(defn athens-version
-  []
-  (cond
-    (electron?) (.. (js/require "electron") -remote -app getVersion)))
-    ;;(not (string/blank? COMMIT_URL)) COMMIT_URL
-    ;;:else "Web"))
-
+(defn athens-version [] COMMIT_SHA)
 
 ;; Window
 
