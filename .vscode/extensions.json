@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        // this _could_ instead be the 'remote dev' pack[1] which this extension
+        // is part of, but remain minimal for now
+        //
+        // [1]; https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+        "ms-vscode-remote.remote-containers",
+    ],
+}

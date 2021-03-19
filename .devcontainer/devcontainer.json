@@ -1,0 +1,14 @@
+{
+    "name": "Athens",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "..",
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+    },
+    "extensions": [
+        "betterthantomorrow.calva",
+    ],
+    "forwardPorts": [3000, 8777, 9630],
+}
