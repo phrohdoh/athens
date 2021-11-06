@@ -193,14 +193,16 @@
                                                           :on-click #(navigate-uid (:block/uid @node) %)})
                                 [:span {:class "formatting"} "#"]
                                 [:span {:class "contents"} title-coll]]))
-     :block-ref            (fn [ref-uid]
+     :block-ref            (fn [ref-uid & [begin-offset end-offset]]
                              (let [block (pull db/dsdb '[*] [:block/uid ref-uid])]
                                (if @block
                                  [:span (use-style block-ref {:class "block-ref"})
                                   [:span {:class "contents" :on-click #(navigate-uid ref-uid %)}
                                    (if (= uid ref-uid)
                                      [parse-and-render "{{SELF}}"]
-                                     [parse-and-render (:block/string @block) ref-uid])]]
+                                     (if (and (some? begin-offset) (some? end-offset))
+                                       [parse-and-render (-> :block/string @block (subs begin-offset end-offset)) ref-uid]
+                                       [parse-and-render (:block/string @block) ref-uid]))]]
                                  (str "((" ref-uid "))"))))
      :url-image            (fn [{url :src alt :alt}]
                              [:img (use-style image {:class "url-image"
