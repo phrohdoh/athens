@@ -36,9 +36,9 @@ jobs:
       #- name: Run JVM tests
       #  run: script/test/jvm
 
-      ## TODO(agentydragon): cache JS deps
-      #- name: Fetch JS deps
-      #  run: yarn
+       # TODO(agentydragon): cache JS deps
+       - name: Fetch JS deps
+         run: yarn
 
        - name: Run Karma tests
          run: script/test/karma
