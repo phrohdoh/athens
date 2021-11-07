@@ -457,7 +457,7 @@
                     ;; block-ref subslice
                     "((block-id!0:10))"
                     [:paragraph
-                     [:block-ref "block-id" 0 10]]
+                     [:block-ref "block-id" "0" "10"]]
 
                     ;; in a middle of text-run
                     "Text with ((block-id)) a block"

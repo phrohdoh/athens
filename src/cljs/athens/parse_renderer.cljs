@@ -201,9 +201,13 @@
                                    (if (= uid ref-uid)
                                      [parse-and-render "{{SELF}}"]
                                      (if (and (some? begin-offset) (some? end-offset))
-                                       [parse-and-render (-> :block/string @block (subs begin-offset end-offset)) ref-uid]
+                                       (let [begin-offset (int begin-offset)
+                                             end-offset (int end-offset)]
+                                         [parse-and-render (-> (:block/string @block) (subs begin-offset end-offset)) ref-uid])
                                        [parse-and-render (:block/string @block) ref-uid]))]]
-                                 (str "((" ref-uid "))"))))
+                                 (if (and (some? begin-offset) (some? end-offset))
+                                   (str "((" ref-uid "!" begin-offset ":" end-offset "))")
+                                   (str "((" ref-uid "))")))))
      :url-image            (fn [{url :src alt :alt}]
                              [:img (use-style image {:class "url-image"
                                                      :alt   alt
