@@ -193,20 +193,34 @@
                                                           :on-click #(navigate-uid (:block/uid @node) %)})
                                 [:span {:class "formatting"} "#"]
                                 [:span {:class "contents"} title-coll]]))
-     :block-ref            (fn [ref-uid & [begin-offset end-offset]]
-                             (let [block (pull db/dsdb '[*] [:block/uid ref-uid])]
+     :block-ref            (fn [ref-uid & extras]
+                             (let [block (pull db/dsdb '[*] [:block/uid ref-uid])
+                                   begin-offset (and (some? extras) (some? (first extras)) (int (first extras)))
+                                   end-offset (and (some? begin-offset) (some? (second extras)) (int (second extras)))]
                                (if @block
                                  [:span (use-style block-ref {:class "block-ref"})
                                   [:span {:class "contents" :on-click #(navigate-uid ref-uid %)}
                                    (if (= uid ref-uid)
                                      [parse-and-render "{{SELF}}"]
-                                     (if (and (some? begin-offset) (some? end-offset))
-                                       (let [begin-offset (int begin-offset)
-                                             end-offset (int end-offset)]
-                                         [parse-and-render (-> (:block/string @block) (subs begin-offset end-offset)) ref-uid])
-                                       [parse-and-render (:block/string @block) ref-uid]))]]
-                                 (if (and (some? begin-offset) (some? end-offset))
+                                     (let [block-str (:block/string @block)
+                                           block-str (cond
+                                                       (and (some? begin-offset) (some? end-offset))
+                                                       (subs block-str begin-offset end-offset)
+                                                       ;
+                                                       (some? begin-offset)
+                                                       (subs block-str begin-offset)
+                                                       ;
+                                                       :else
+                                                       block-str)]
+                                       [parse-and-render block-str ref-uid]))]]
+                                 (cond
+                                   (and (some? begin-offset) (some? end-offset))
                                    (str "((" ref-uid "!" begin-offset ":" end-offset "))")
+                                   ;
+                                   (some? begin-offset)
+                                   (str "((" ref-uid "!" begin-offset "))")
+                                   ;
+                                   :else
                                    (str "((" ref-uid "))")))))
      :url-image            (fn [{url :src alt :alt}]
                              [:img (use-style image {:class "url-image"
